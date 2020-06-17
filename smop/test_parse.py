@@ -1,6 +1,6 @@
 import unittest
-import parse
-import node
+import smop.parse as parse
+import smop.node as node
 
 class TestParse(unittest.TestCase):
     def test_p03(self):

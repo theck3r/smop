@@ -2,9 +2,9 @@
 %* Matlab Benchmark program version 5.0 *
 %* Author : Stefan Steinhaus *
 %*
-EMAIL : stefan@steinhaus
--
-net.de *
+%* EMAIL : stefan@steinhaus
+%* -
+%* net.de *
 %* This program is public domain. Feel free to copy it freely. *
 %***************************************************************************
 clc
@@ -20,8 +20,7 @@ disp('=================================')
 disp(' ')
 %* Misc. operation *
 result=0; runs=3;
-for i
-=1:runs;
+for i=1:runs;
 tic;
 datmat=importdata('currency2.txt',' ');
 Limits_Area=[1,261,522,784,1045,1305,1565,1827,2088,2349,2610,2871,3131,3158];

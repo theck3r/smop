@@ -1,6 +1,9 @@
-import parse,sys,os
+import smop.parse as parse
+import sys,os
 import networkx as nx
-import node,resolve,options
+import smop.node as node
+import smop.resolve as resolve
+import smop.options as options
 
 def callgraph(G, stmt_list):
     """
@@ -27,5 +30,5 @@ def callgraph(G, stmt_list):
     #for u in G.nodes():
     #    if G.out_degree(u) == 0:
     #        print u
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

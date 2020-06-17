@@ -1,5 +1,5 @@
 import unittest
-import lexer
+import smop.lexer as lexer
 
 class TestLexer(unittest.TestCase):
     def setUp(self):

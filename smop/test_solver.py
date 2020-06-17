@@ -1,6 +1,6 @@
 import numpy,time
 from solver import *
-from libsmop import *
+from smop.libsmop import *
 
 def main():
     ai = matlabarray(zeros(10,10,dtype=int))
