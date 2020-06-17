@@ -55,7 +55,11 @@ def main():
                 if options.verbose:
                     print("\tExcluded: '%s'" % options.filename)
                 continue
-            buf = open(options.filename).read()
+            try:
+                buf = open(options.filename).read()
+            except UnicodeDecodeError:
+                buf = open(options.filename, encoding='ISO-8859-14').read()
+                # TODO: shoudl work for other encodings as well...
             buf = buf.replace("\r\n", "\n")
             # FIXME buf = buf.decode("ascii", errors="ignore")
             stmt_list = parse.parse(buf if buf[-1] == '\n' else buf + '\n')
