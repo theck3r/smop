@@ -427,6 +427,10 @@ def copy(a):
     return matlabarray(np.asanyarray(a).copy(order="F"))
 
 
+def cos(a):
+    return np.cos(a)
+
+
 def deal(a, **kwargs):
     # import pdb; pdb.set_trace()
     return tuple([ai for ai in a.flat])
@@ -651,6 +655,8 @@ def ones(*args, **kwargs):
 # def primes(*args):
 #    return _primes.primes(*args)
 
+pi = np.pi
+
 def qr(a):
     return matlabarray(_qr(np.asarray(a)))
 
@@ -780,6 +786,10 @@ def sum(a, dim=None):
         return np.asanyarray(a).sum()
     else:
         return np.asanyarray(a).sum(dim - 1)
+
+
+def tan(a):
+    return np.tan(a)
 
 
 def toupper(a):
