@@ -373,6 +373,14 @@ def any(a):
     return numpy.any(a)
 
 
+def atan(a):
+    return numpy.arctan(a)
+
+
+def acos(a):
+    return numpy.arccos(a)
+
+
 def arange(start, stop, step=1, **kwargs):
     """
     >>> a=arange(1,10) # 1:10
@@ -422,6 +430,10 @@ def copy(a):
 def deal(a, **kwargs):
     # import pdb; pdb.set_trace()
     return tuple([ai for ai in a.flat])
+
+
+def deg2rad(a):
+    return numpy.deg2rad(a)
 
 
 def disp(*args):
